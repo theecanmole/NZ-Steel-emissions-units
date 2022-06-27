@@ -1,6 +1,7 @@
 # NZ Steel free industrial allocation of emissions units 2010 to 2020
 
 # EPA industrial allocation data https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Reports/Industrial-Allocations/Industrial-Allocations-Final-Decisions.xlsx
+
 # navigate to folder /media/user/RED/NZsteel, select file NZ-Steel-code.r and right click and open with RKward
 # what version of R is this?
 R.version.string
