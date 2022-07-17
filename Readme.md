@@ -1,6 +1,6 @@
-Should a major emitter like New Zealand Steel Limited be accumulating emissions units under the emissions trading scheme?
+## Should a major emitter like New Zealand Steel Limited be accumulating emissions units under the emissions trading scheme?
 
-New Zealand Steel Limited free industrial allocation of emissions units 2010 to 2020
+### New Zealand Steel Limited free industrial allocation of emissions units 2010 to 2020
 
 Every year since the New Zealand Emissions Trading Scheme (or "ETS") began, New Zealand Steel Limited has received more emissions units under the ETS Industrial Allocation rules then it has had to surrender to the Government for it's emissions.
 
