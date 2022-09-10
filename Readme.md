@@ -18,7 +18,7 @@ Here is the same graph but with the industrial allocation of free emissions unit
 
 ![](NZsteel-Allocation-GHGs-line-2010-2020-720by540v2.svg)
 
-The free emissions units don't seem to relate logically to the steel emissions. The free units seem to be roughly half of the emissions until 2016 then the free units increase anually until they are greater than the emissions in years 2018 2019 and 2020. What's going on?
+The free emissions units don't seem to relate logically to the steel emissions. The free units seem to be roughly half of the emissions until 2016 then the free units increase anually until they are greater than the emissions in years 2018, 2019 and 2020. What's going on?
 
 There is another variable to take into account. It is the the Nick Smith '1 for 2' surrender obligation of 2009 which halved the unit surrender liability of emitters.
 

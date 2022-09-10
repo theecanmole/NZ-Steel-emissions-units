@@ -1,5 +1,6 @@
 # NZ Steel free industrial allocation of emissions units 2010 to 2020
-
+# https://www.stuff.co.nz/business/114961557/very-real-risk-nz-steel-could-be-forced-to-pull-out-of-auckland
+# https://www.stuff.co.nz/business/farming/83230321/companies-revealed-for-buying-fraudulent-carbon-credits?rm=a
 # EPA industrial allocation data https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Reports/Industrial-Allocations/Industrial-Allocations-Final-Decisions.xlsx
 
 # navigate to folder /media/user/RED/NZsteel, select file NZ-Steel-code.r and right click and open with RKward
@@ -14,8 +15,8 @@ library(tidyr)
 
 # check and/or reset working folder
 getwd()
-[1] "/media/user/RED/NZsteel"
-setwd("/media/user/RED/NZsteel")
+[1] "/home/user/R/NZsteel"
+setwd("/home/user/R/NZsteel")
 
 # obtain 2021 to 2020 emission unit allocation to industry data from EPA
 download.file("https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Reports/Industrial-Allocations/Industrial-Allocations-Final-Decisions.xlsx","Industrial-Allocations-Final-Decisions.xlsx")
@@ -366,6 +367,7 @@ mtext(side=4,cex=0.75, line=0.05,R.version.string)
 box()
 
 # de-emphasize variables except ets liability and allocation and over allocation -> darkgray for
+
 png("NZsteel-Allocation-GHGs-line-2010-2020-560by420-v3.png", bg="white", width=560, height=420,pointsize = 14)
 par(mar=c(2.7,2.7,1,1)+0.1)
 plot(NZsteelunits[["Year"]],NZsteelunits[["Allocation"]]/10^6,ylim=c(0,2.9),tck=0.01,axes=FALSE,ann=FALSE, type="n",las=1)
@@ -560,7 +562,8 @@ str(NZsteelunits)
  $ Overallocation: num  70594 146358 171358 175280 207299 ...
  $ ERU           : int  NA NA NA 1022527 1001714 32534 NA NA NA NA ...
  $ Stockpile     : num  70594 216953 388311 1586118 2795131 ... 
- NZsteelunits[["Stockpile"]][11]
+
+NZsteelunits[["Stockpile"]][11]
 [1] 4742749 
 # or 4,742,749 units or 4.7 million units
 # How many cumulative emissions units are there (if not sold earlier) 
@@ -693,3 +696,106 @@ mtext(side=2,cex=0.9, line=-1.2,expression(paste("million tonnes C", O[2], "-e")
 mtext(side=4,cex=0.75, line=0.05,R.version.string)
 box()
 dev.off()
+
+# do some linear regression of NZ Steel's emissions 
+NZsteelunits <- read.csv("NZsteelunits-2010-2020.csv")
+
+str(NZsteelunits)
+'data.frame':	11 obs. of  9 variables:
+ $ Year          : int  2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 ...
+ $ Allocation    : int  494704 989304 1003730 1029352 1073489 1067501 1048116 1432496 1782366 2118983 ...
+ $ Value         : num  8696896 19627791 6253238 1996943 4379835 ...
+ $ Emissions     : num  1696438 1685892 1664743 1708143 1732380 ...
+ $ twoforone     : num  0.25 0.5 0.5 0.5 0.5 0.5 0.5 0.67 0.83 1 ...
+ $ ETSliability  : num  424110 842946 832372 854072 866190 ...
+ $ Overallocation: num  70594 146358 171358 175280 207299 ...
+ $ ERU           : int  NA NA NA 1022527 1001714 32534 NA NA NA NA ...
+ $ Stockpile     : num  70594 216953 388311 1586118 2795131 ... 
+ 
+ lm(formula, data, subset, weights, na.action,
+   method = "qr", model = TRUE, x = FALSE, y = FALSE, qr = TRUE,
+   singular.ok = TRUE, contrasts = NULL, offset, ...)
+   
+steelregression <- lm(Emissions~Year,data=NZsteelunits)
+summary(steelregression)
+Call:
+lm(formula = Emissions ~ Year, data = NZsteelunits)
+Coefficients:
+(Intercept)         Year  
+   11177338        -4705
+summary(steelregression)
+
+Call:
+lm(formula = Emissions ~ Year, data = NZsteelunits)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-94319 -26407   2334  25818  71471 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept) 11177338   10002745   1.117    0.293
+Year           -4705       4964  -0.948    0.368
+
+Residual standard error: 52060 on 9 degrees of freedom
+Multiple R-squared:  0.09076,	Adjusted R-squared:  -0.01027 
+F-statistic: 0.8984 on 1 and 9 DF,  p-value: 0.368 
+
+plot(NZsteelunits[["Year"]],NZsteelunits[["Allocation"]],ylim=c(0,2.9*10^6),tck=0.01,axes=FALSE,ann=FALSE, type="n",las=1)
+lines(NZsteelunits[["Year"]],NZsteelunits[["Emissions"]],col="darkgray",lwd=1)
+points(NZsteelunits[["Year"]],NZsteelunits[["Emissions"]],col="darkgray",cex=1,pch=16)
+lines(abline(steelregression))
+axis(side=1, tck=0.01, las=0, lwd = 1, at = c(2010:2020), labels = c(2010:2020), tick = TRUE)
+axis(side=2, tck=0.01, las=2, line = NA,lwd = 1, tick = TRUE)
+
+years <-NZsteelunits[["Year"]]- 2009
+emissions <- NZsteelunits[["Emissions"]]/10^6
+steelregression <- lm(emissions~years)
+
+
+summary(steelregression)
+Call:
+lm(formula = emissions ~ years)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.094319 -0.026407  0.002334  0.025818  0.071471 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1.724630   0.033668  51.224 2.07e-12 ***
+years       -0.004705   0.004964  -0.948    0.368    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.05206 on 9 degrees of freedom
+Multiple R-squared:  0.09076,	Adjusted R-squared:  -0.01027 
+F-statistic: 0.8984 on 1 and 9 DF,  p-value: 0.368 
+
+max(emissions) 
+[1] 1.76787
+
+plot(years,emissions,ylim=c(0,1.8),xlim=c(0,12),tck=0.01,axes=TRUE,ann=TRUE, type="l",las=1)
+lines(years,emissions,col="darkgray",lwd=1)
+points(years,emissions,col="darkgray",cex=1,pch=16)
+lines(abline(steelregression))
+axis(side=1, tck=0.01, las=0, lwd = 1, tick = TRUE)
+axis(side=2, tck=0.01, las=2, line = NA,lwd = 1, tick = TRUE)
+
+summary(steelregression)
+Call:
+lm(formula = emissions ~ years)
+
+(Intercept)  1.724630
+years       -0.004705
+y = 1.724630 + -0.004705 (x)
+x = years = 11 {2021} 
+predict11 <- 1.724630 + (11 *-0.004705)
+predict12 <- 1.724630 + (12 *-0.004705)
+
+predict11
+[1] 1.672875
+predict12
+[1] 1.66817
+points(11,predict11,col="darkgray",cex=1,pch=16)
+points(12,predict12,col="darkgray",cex=1,pch=16)
