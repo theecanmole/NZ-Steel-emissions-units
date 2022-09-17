@@ -18,7 +18,7 @@ getwd()
 [1] "/home/user/R/NZsteel"
 setwd("/home/user/R/NZsteel")
 
-# obtain 2021 to 2020 emission unit allocation to industry data from EPA
+# obtain 2010 to 2020 emission unit allocation to industry data from EPA
 download.file("https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Reports/Industrial-Allocations/Industrial-Allocations-Final-Decisions.xlsx","Industrial-Allocations-Final-Decisions.xlsx")
 trying URL 'https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Reports/Industrial-Allocations/Industrial-Allocations-Final-Decisions.xlsx'
 Content type 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' length 56684 bytes (55 KB)

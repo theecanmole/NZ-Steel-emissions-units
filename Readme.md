@@ -2,17 +2,17 @@
 
 ### New Zealand Steel Limited free industrial allocation of emissions units 2010 to 2020
 
-Every year since the New Zealand Emissions Trading Scheme (or "ETS") began, New Zealand Steel Limited has received more emissions units under the ETS Industrial Allocation rules then it has had to surrender to the Government for it's emissions.
+Every year since the [New Zealand Emissions Trading Scheme](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/) began, [New Zealand Steel Limited](https://en.wikipedia.org/wiki/New_Zealand_Steel) has received more emissions units under the [ETS Industrial Allocation](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/industrial-allocations/how-to-apply/) rules then it has had to surrender to the Government for it's emissions.
 
-Should the emissions trading scheme result in New Zealand Steel accumulating a stockpile of emissions units? In a sensibly designed emissions trading scheme, shouldn't the 'flow' of emissions units be from the emitter, New Zealand Steel, to the Government?
+Should the emissions trading scheme result in New Zealand Steel accumulating a stockpile of emissions units? In a sensibly designed emissions trading scheme, shouldn't the net 'flow' of emissions units be from the emitter, New Zealand Steel, to the Government? And not from the Government to the emitter?
 
 Here is a graph of the greenhouse gas emissions of the New Zealand steel sector from the Greenhouse Gas Inventory. The emissions do not vary much over time. I assume that is because production in the steel smelter is also consistent from year to year.
 
 ![](NZsteel-Allocation-GHGs-line-2010-2020-720by540v1.svg) 
 
-I know these emissions are from the New Zealand Steel Limited's steel smelting plant in Glenbrook as I looked up New Zealand Steel's actual emissions in the EPA report "ETS Participant Emissions" October 2021. New Zealand Steel's reported emissions are (steel 54,431 + stationary energy 762,038 + coal purchase 736,875 equals) 1,553,344 tonnes.
+I know these emissions are from the New Zealand Steel Limited's steel smelting plant in Glenbrook as I looked up New Zealand Steel's actual emissions in the EPA report ["ETS Participant Emissions"](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/ets-reports/emissions-returns/) October 2021. New Zealand Steel's reported emissions are (steel 54,431 + stationary energy 762,038 + coal purchase 736,875 equals) 1,553,344 tonnes.
 
-I have marked that data point with a purple circle. The 2020 GHG Inventory steel emissions are 1,578,554; the green circle. The purple and green data points overlap on the graph. So I think it's reasonable to use the GHG Inventory steel industry emissions as an estimate of New Zealand Steel's actual emissions from 1990 to 2020.
+I have marked that data point with a purple circle. The [2020 Greenhouse Gas Inventory](https://environment.govt.nz/publications/new-zealands-greenhouse-gas-inventory-1990-2020/) steel emissions are 1,578,554; the green circle. The purple and green data points overlap on the graph. So I think it's reasonable to use the GHG Inventory steel industry emissions as an estimate of New Zealand Steel's actual emissions from 1990 to 2020.
 
 Here is the same graph but with the industrial allocation of free emissions units added.
 
@@ -30,9 +30,9 @@ So I need to factor in the discount to estimate the actual liability to surrende
 
 Well what do you know? The annual allocation of free emissions units always exceeds the ETS liability to surrender units. New Zealand Steel Limited has never had to surrender any emission units under the ETS. New Zealand Steel Limited is always a net seller of emissions units.
 
-The rationalisation for the annual surplus of units over ETS liability is that New Zealand Steel Limited also faces an indirect emissions trading scheme carbon price on the electricity it consumes. So the only carbon price the New Zealand Steel is exposed to, is through it's electricity bills.
+The rationalisation for the annual surplus of units over ETS liability is that New Zealand Steel Limited also faces an [indirect emissions trading scheme carbon price on the electricity](https://web.archive.org/web/20110712151351/http://www.climatechange.govt.nz/emissions-trading-scheme/building/regulatory-updates/eaf-update.html) it consumes. So the only carbon price the New Zealand Steel is exposed to, is through it's electricity bills.
 
-I think that this electricity ETS pass-through cost is an imaginary artefact. It can only be detected by 'modelling'; that is to say fiddling numbers on a spreadsheet. It is confused with coal fired generation setting the marginal cost of electricity in the wholesale market. I think it is implausible that a high-volume contract for electricity supply negotiated by a large corporate with market power includes any carbon price pass-through cost.
+I think that this [electricity ETS pass-through cost](https://web.archive.org/web/20110712151351/http://www.climatechange.govt.nz/emissions-trading-scheme/building/regulatory-updates/eaf-update.html) is an imaginary artefact. It can only be detected by 'modelling'; that is to say fiddling numbers on a spreadsheet. It is confused with coal fired generation setting the marginal cost of electricity in the wholesale market. I think it is implausible that a high-volume contract for electricity supply negotiated by a large corporate with market power includes any carbon price pass-through cost.
 
 The next graph shows the annual excess or surplus of allocated emission units over the estimated number of emissions units actually surrendered back to the Government.
 
