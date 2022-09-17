@@ -20,7 +20,7 @@ Here is the same graph but with the industrial allocation of free emissions unit
 
 The free emissions units don't seem to relate logically to the steel emissions. The free units seem to be roughly half of the emissions until 2016 then the free units increase anually until they are greater than the emissions in years 2018, 2019 and 2020. What's going on?
 
-There is another variable to take into account. It is the the Nick Smith '1 for 2' surrender obligation of 2009 which halved the unit surrender liability of emitters.
+There is another variable to take into account. It is the the [Nick Smith '1 for 2' surrender obligation of 2009](https://environment.govt.nz/publications/emissions-trading-bulletin-no-11-summary-of-the-proposed-changes-to-the-nz-ets/summary/) which halved the unit surrender liability of emitters. Meaning they were required to surrender 1 unit for two tonnes of emissions (Or half a unit per tonne).
 
 Prior to 2017, non-forestry participants in the ETS had to surrender one eligible unit for every two tonnes of emissions. A "one for two" deal. This discount was phased out from 2017; 1 unit for each 1.5 whole tonnes of emissions, 2018; - 1 unit for each 1.2 whole tonnes of emissions. And finally in 2019; the ETS gets to 1 unit for each 1 whole tonne of emissions.
 
