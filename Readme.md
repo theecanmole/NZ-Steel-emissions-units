@@ -2,7 +2,7 @@
 
 ### New Zealand Steel Limited free industrial allocation of emissions units 2010 to 2020
 
-Every year since the [New Zealand Emissions Trading Scheme](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/) began, [New Zealand Steel Limited](https://en.wikipedia.org/wiki/New_Zealand_Steel) has received more emissions units under the [ETS Industrial Allocation](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/industrial-allocations/how-to-apply/) rules then it has had to surrender to the Government for it's emissions.
+Every year since the [New Zealand Emissions Trading Scheme](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/) began, [New Zealand Steel Limited](https://en.wikipedia.org/wiki/New_Zealand_Steel) has received more emissions units under the [Emissions Trading Scheme Industrial Allocation](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/industrial-allocations/) rules then it has had to surrender to the Government for it's emissions.
 
 Should the emissions trading scheme result in New Zealand Steel accumulating a stockpile of emissions units? In a sensibly designed emissions trading scheme, shouldn't the net 'flow' of emissions units be from the emitter, New Zealand Steel, to the Government? And not from the Government to the emitter?
 
@@ -14,7 +14,7 @@ I know these emissions are from the New Zealand Steel Limited's steel smelting p
 
 I have marked that data point with a purple circle. The [2020 Greenhouse Gas Inventory](https://environment.govt.nz/publications/new-zealands-greenhouse-gas-inventory-1990-2020/) steel emissions are 1,578,554; the green circle. The purple and green data points overlap on the graph. So I think it's reasonable to use the GHG Inventory steel industry emissions as an estimate of New Zealand Steel's actual emissions from 1990 to 2020.
 
-Here is the same graph but with the industrial allocation of free emissions units added.
+Here is the same graph but with the [industrial allocation](https://web.archive.org/web/20121211052612/http://www.climatechange.govt.nz/emissions-trading-scheme/participating/industry/allocation/how-it-works/) of free emissions units added.
 
 ![](NZsteel-Allocation-GHGs-line-2010-2020-720by540v2.svg)
 
@@ -38,7 +38,7 @@ The next graph shows the annual excess or surplus of allocated emission units ov
 
 ![](NZsteel-Allocation-GHGs-line-2010-2020-720by540v4.svg)
 
-Back in 2016 I asked why does the Emissions Trading Register show that New Zealand Steel Limited own over 1 million emission reduction units (internationally sourced, bargain priced and probably fraudulent 'hot air' units) at the end of 2013 and 2014, given it never needed to buy emissions units to meet it's ETS obligations?
+Back in 2016 I asked why does the Emissions Trading Register show that New Zealand Steel Limited owned over 1 million [emission reduction units](https://en.wikipedia.org/wiki/Emission_Reduction_Unit) (internationally sourced, bargain priced and probably fraudulent 'hot air' units) at the end of 2013 and 2014, given it never needed to buy emissions units to meet it's ETS obligations?
 
 ![](Screenshot_2022-05-20_19-45-12.png)
 
@@ -51,6 +51,6 @@ The point being that these units just add to the growing 'stockpile' of units ow
 
 ![](NZsteel-Allocation-GHGs-line-2010-2020-720by540v7.svg)
 
-If New Zealand Steel have used the cheaper ERUs for it's ETS liabilities and kept all surplus NZU emission units, they would own 4.7 million units at the end of 2020. This leaves out however many units New Zealand Steell was allocated in May 2021 and in May 2022. The 4.7 million units will have a current market value of $364 million based on a carbon price of $76.90
+If New Zealand Steel have used the cheaper ERUs for it's ETS liabilities and kept all surplus NZU emission units, they would own 4.7 million units at the end of 2020. This leaves out however many units New Zealand Steel was allocated in May 2021 and in May 2022. The 4.7 million units will have a current market value of $364 million based on a carbon price of $76.90
 
 So my final question is: How can this be a sensible outcome from a policy intended to incentivise the reduction of greenhouse gas emissions? Instead, the emitter ends up with a financial asset making considerable capital gains. How is this possibly compatible with a net zero in 2050 policy?
