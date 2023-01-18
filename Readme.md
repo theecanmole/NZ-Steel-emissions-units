@@ -2,7 +2,7 @@
 
 ### New Zealand Steel Limited free industrial allocation of emissions units 2010 to 2020
 
-Every year since the [New Zealand Emissions Trading Scheme](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/) began, [New Zealand Steel Limited](https://en.wikipedia.org/wiki/New_Zealand_Steel) has received more emissions units under the [Emissions Trading Scheme Industrial Allocation](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/industrial-allocations/) rules then it has had to surrender to the Government for it's emissions.
+Every year since the [New Zealand Emissions Trading Scheme](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/) began, [New Zealand Steel Limited](https://en.wikipedia.org/wiki/New_Zealand_Steel) has received more emissions units under the Emissions Trading Scheme [Industrial Allocation](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/industrial-allocations/) rules then it has had to surrender to the Government for it's emissions.
 
 Should the emissions trading scheme result in New Zealand Steel accumulating a stockpile of emissions units? In a sensibly designed emissions trading scheme, shouldn't the net 'flow' of emissions units be from the emitter, New Zealand Steel, to the Government? And not from the Government to the emitter?
 
@@ -21,6 +21,8 @@ Here is the same graph but with the [industrial allocation](https://web.archive.
 The free emissions units don't seem to relate logically to the steel emissions. The free units seem to be roughly half of the emissions until 2016 then the free units increase anually until they are greater than the emissions in years 2018, 2019 and 2020. What's going on?
 
 There is another variable to take into account. It is the the [Nick Smith '1 for 2' surrender obligation of 2009](https://environment.govt.nz/publications/emissions-trading-bulletin-no-11-summary-of-the-proposed-changes-to-the-nz-ets/summary/) which halved the unit surrender liability of emitters. Meaning they were required to surrender 1 unit for two tonnes of emissions (Or half a unit per tonne).
+
+![](Screenshot_2023-01-11_16-21-01.png) 
 
 Prior to 2017, non-forestry participants in the ETS had to surrender one eligible unit for every two tonnes of emissions. A "one for two" deal. This discount was phased out from 2017; 1 unit for each 1.5 whole tonnes of emissions, 2018; - 1 unit for each 1.2 whole tonnes of emissions. And finally in 2019; the ETS gets to 1 unit for each 1 whole tonne of emissions.
 
