@@ -49,10 +49,10 @@ I argued New Zealand Steel would have surrendered the much cheaper "hot air" emi
 Lets add the emission reduction units to our chart as teal green points (and lines) in 2013 and 2013.
 ![](NZsteel-Allocation-GHGs-line-2010-2020-720by540v5.svg)
 
-The point being that these units just add to the growing 'stockpile' of units owned by New Zealand Steel. If the annual surpluses and the ERUs are added into a cumulative total we get this chart.
+The point being that these units just add to the growing 'stockpile' of units owned by New Zealand Steel. If I resize the Y axis and I add the annual surpluses and the ERUs as a cumulative total we get this chart.
 ![](NZsteel-Allocation-GHGs-line-2010-2020-720by540v6.svg)
 
-To emphasise the growth of the cumulative total of the surplus units, I have 'grayed out' the annual emissions, the allocations, the ETS surrender liability and the annual surplus of units. The growing stockpile is the red line. and resized the Y axis. The two biggest annual increases in the stockpile are 2013 and 2014 when New Zealand Steel had cheap the cheaper ERUs as well as allocated NZUs.
+To emphasise the growth of the cumulative total of the surplus units, I have 'grayed out' the annual emissions, the allocations, the ETS surrender liability and the annual surplus of units. The growing stockpile is the top line. The two biggest annual increases in the stockpile are 2013 and 2014 when New Zealand Steel had cheap the cheaper ERUs as well as allocated NZUs.
 
 ![](NZsteel-Allocation-GHGs-line-2010-2020-720by540v7.svg)
 
