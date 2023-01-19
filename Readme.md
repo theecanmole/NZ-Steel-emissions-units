@@ -10,7 +10,7 @@ Here is a graph of the greenhouse gas emissions of the New Zealand steel sector 
 
 ![](NZsteel-Allocation-GHGs-line-2010-2020-720by540v1.svg) 
 
-I know these emissions are from the New Zealand Steel Limited's steel smelting plant in Glenbrook as I looked up New Zealand Steel's actual emissions in the EPA report ["ETS Participant Emissions"](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/ets-reports/emissions-returns/) October 2021. New Zealand Steel's reported emissions are (steel 54,431 + stationary energy 762,038 + coal purchase 736,875 equals) 1,553,344 tonnes.
+I know these emissions are from the New Zealand Steel Limited's steel smelting plant in Glenbrook as I looked up New Zealand Steel's actual 2020 emissions in the EPA report ["ETS Participant Emissions"](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/ets-reports/emissions-returns/) October 2021. New Zealand Steel's reported emissions are (steel 54,431 + stationary energy 762,038 + coal purchase 736,875 equals) 1,553,344 tonnes.
 
 I have marked that data point with a purple circle. The [2020 Greenhouse Gas Inventory](https://environment.govt.nz/publications/new-zealands-greenhouse-gas-inventory-1990-2020/) steel emissions are 1,578,554; the green circle. The purple and green data points overlap on the graph. So I think it's reasonable to use the GHG Inventory steel industry emissions as an estimate of New Zealand Steel's actual emissions from 1990 to 2020.
 
@@ -49,10 +49,13 @@ I argued New Zealand Steel would have surrendered the much cheaper "hot air" emi
 Lets add the emission reduction units to our chart as teal green points (and lines) in 2013 and 2013.
 ![](NZsteel-Allocation-GHGs-line-2010-2020-720by540v5.svg)
 
-The point being that these units just add to the growing 'stockpile' of units owned by New Zealand Steel. As in this chart where I have 'grayed out' the annual emissions, the allocations, the ETS surrender liability and the annual surplus of units. I have add the growing stockpile as the red line and resized the Y axis. The two biggest annual increases in the stockpile are 2013 and 2014 when New Zealand Steel had cheap ERUs as well as allocated NZUs.
+The point being that these units just add to the growing 'stockpile' of units owned by New Zealand Steel. If the annual surpluses and the ERUs are added into a cumulative total we get this chart.
+![](NZsteel-Allocation-GHGs-line-2010-2020-720by540v6.svg)
+
+To emphasise the growth of the cumulative total of the surplus units, I have 'grayed out' the annual emissions, the allocations, the ETS surrender liability and the annual surplus of units. The growing stockpile is the red line. and resized the Y axis. The two biggest annual increases in the stockpile are 2013 and 2014 when New Zealand Steel had cheap the cheaper ERUs as well as allocated NZUs.
 
 ![](NZsteel-Allocation-GHGs-line-2010-2020-720by540v7.svg)
 
-If New Zealand Steel have used the cheaper ERUs for it's ETS liabilities and kept all surplus NZU emission units, they would own 4.7 million units at the end of 2020. This leaves out however many units New Zealand Steel was allocated in May 2021 and in May 2022. The 4.7 million units will have a current market value of $364 million based on a carbon price of $76.90
+If New Zealand Steel have used the cheaper ERUs for it's ETS liabilities and kept all surplus NZU emission units, they would own 4.9 million units at the end of 2020. This leaves out however many units New Zealand Steel was allocated in May 2021 and in May 2022. The 4. million units will have a current market value of $364 million based on a carbon price of $76.90
 
 So my final question is: How can this be a sensible outcome from a policy intended to incentivise the reduction of greenhouse gas emissions? Instead, the emitter ends up with a financial asset making considerable capital gains. How is this possibly compatible with a net zero in 2050 policy?
