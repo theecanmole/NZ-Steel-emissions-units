@@ -10,7 +10,7 @@ https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Report
 # LINK ROT https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Reports/Industrial-Allocations/Industrial-Allocations-Final-Decisions.xlsx
 # Companies office https://app.companiesoffice.govt.nz/companies/app/ui/pages/companies/421913/detail
 # Climate Change (Stationary Energy and Industrial Processes) Regulations 2009 https://www.legislation.govt.nz/regulation/public/2009/0285/latest/DLM2394207.html 
-# navigate to folder /media/user/RED/NZsteel, select file NZ-Steel-code.r and right click and open with RKward
+# navigate to folder /NZsteel, select file NZ-Steel-code.r and right click and open with RKward
 # what version of R is this?
 R.version.string
 [1] "R version 4.2.0 (2022-04-22)"
@@ -68,6 +68,7 @@ nzu2018 <- filter(Allocations, Year =="2018")
 nzu2019 <- filter(Allocations, Year =="2019") 
 nzu2020 <- filter(Allocations, Year =="2020")  
 nzu2021 <- filter(Allocations, Year =="2021")
+
 # check just the 2010 data
 str(nzu2010)
 Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	141 obs. of  4 variables:
@@ -192,6 +193,7 @@ steel
 length(steel)
 [1] 11
 # but the allocations dataframe has 12 rows 2010 to 2021
+
 # add 2021 steel emissions from Participant report 1889288 tonnes
 steel <- c(steel, 1889288)
 # add actual steel sector emissions 2010 to 2020 allocation dataframe 
@@ -224,8 +226,7 @@ Table 7: Producing iron or steel New Zealand Steel Development Limited 43466 (pa
 There are 5 opt-in participants who purchase stationary energy. Table 17 details their emissions for the 2020 calendar year. 
 Table 17: Reported participant emissions stationary energy opt-in participants 2021
 Purchasing coal New Zealand Steel Limited 856363 (page 39)
-43466 + 989459 + 856363 
-[1] 1889288 
+43466 + 989459 + 856363 = 1889288 tonnes 
 
 # Yes the 2021 NZ Steel actual emissions = 1889288 tonnes, 2021 GHG Inventory steel emissions = ??, so they are near enough
 
@@ -292,12 +293,15 @@ NZsteelunits[["Stockpile"]][12]
 # or 4,998,943 units or 4.9 million units at end of calendar year 2021
 
 # What is most recent NZU price? From 23 December 2022 NZU spot price? https://www.carbonnews.co.nz/story.asp?storyID=26800
-carbonspotprice <- 76.00
+
+Jan 24, 2023, 18:30:39	https://www.carbonnews.co.nz/story.asp?storyID=26805
+carbonspotprice <- 73.00
 # What is the market value (if stockpile is still owned by NZ Steel and is an asset on their balance sheet) It's ~ $380 million
 NZsteelunits[["Stockpile"]][12] * carbonspotprice
 [1] 379919658
 # $379,919,658
-
+4998943 * 73
+[1] 364922839 # or [1] $364,922,839
 # save dataframe as a .csv file 
 write.table(NZsteelunits, file = "NZsteelunits.csv", sep = ",", col.names = TRUE, qmethod = "double",row.names = FALSE)
 
