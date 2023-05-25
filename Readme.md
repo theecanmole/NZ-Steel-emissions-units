@@ -1,6 +1,44 @@
-## Should a major emitter like New Zealand Steel Limited be accumulating emissions units under the emissions trading scheme?
+## New Zealand Steel Limited free industrial allocation of emissions units 2010 to 2021
 
-### New Zealand Steel Limited free industrial allocation of emissions units 2010 to 2020
+### If it's worth paying New Zealand Steel to reduce emissions shouldn't we first stop paying them to increase emissions?
+
+The Government made an extremely exaggerated announcement on Sunday 21 May 2023 that it will contribute $140 million to a New Zealand Steel project to electrify (replace coal thermal heat) their steel and iron recycling process. Thus reducing future emissions of greenhouse gases.
+
+NZ’s biggest ever emissions reduction project unveiled the title breathlessly gushed.
+
+If only the hyperbole flowing from the joint Government and Te Tari Tiaki Pūngao/EECA announcement matched the appalling reality of how dysfunctional the overall picture of New Zealand Steel's treatment is under the emissions trading scheme.
+
+New Zealand Steel has never faced an emissions price under the emissions trading scheme.
+
+In every year since 2010, New Zealand Steel has been allocated far more free emissions units than the number it has had to surrender back to the Government. In each year there is an annual surplus of units.
+
+Here is a chart of the allocated emissions units and the estimated liability to surrender units under the emissions trading scheme
+
+![](NZsteel-Allocation-GHGs-line-2010-2020-720by540v3a.svg) 
+
+The effect of the excessively generous allocation of units is to completely insulate New Zealand Steel from an emissions price.
+
+Notwithstanding this extremely generous subsidy, back in 2012 and 2013 New Zealand Steel still engaged in [windfall arbitrage profiteering](http://bit.ly/1TQUr5C) by buying dirt cheap international hot air emissions units. The point being that New Zealand Steel did not need any additional units to surrender as the allocation of units already exceeded the liability to surrender units in those two years.
+
+The annual amount of free emissions units allocated is [proportional to the steel production](https://www.beehive.govt.nz/release/revised-ets-balances-nz%E2%80%99s-environment-economy). If production and emissions increase, the amount of free emission units allocated increases.
+
+Conversely, if steel production and emissions decline, the amount of free emission units decreases. Free allocation of emission units incentivises increased emissions. And disincentivises reduced emissions.
+
+New Zealand Steel has been allocated a total of 16 million emission units between 2010 to 2021. This is the Government paying New Zealand Steel to emit greenhouse gas.
+
+New Zealand's emissions units now have an enhanced value due to the 2020 amendments to the Climate Change Response Act.
+
+This is a chart of the annual values of the New Zealand Steel unit allocations when priced with a mean May price. May is the month when the units are transferred to New Zealand Steel's ownership.
+
+![](Fonterra-units-marketvalue-720by540a.svg)
+
+The 16 million emissions units allocated to New Zealand Steel have a total value of $308 million. The proposed grant to reduce steel recycling emissions by electrification, is $140 million.
+
+New Zealand Steel has already been paid twice as much money ($308 million) to maintain it's emissions, as the value of the proposed electrification grant ($140 million). 
+
+If it's worth paying New Zealand Steel to reduce emissions shouldn't we first stop paying them to increase emissions?
+
+### Should a major emitter like New Zealand Steel Limited be accumulating a stockpile of emissions units under the emissions trading scheme?
 
 Every year since the [New Zealand Emissions Trading Scheme](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/) began, [New Zealand Steel Limited](https://en.wikipedia.org/wiki/New_Zealand_Steel) has received more emissions units under the Emissions Trading Scheme [Industrial Allocation](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/industrial-allocations/) rules then it has had to [surrender](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/participating-in-the-ets/surrendering-units/) to the Government for it's emissions.
 
