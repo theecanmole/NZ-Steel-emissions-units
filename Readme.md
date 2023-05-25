@@ -30,7 +30,7 @@ New Zealand's emissions units now have an enhanced value due to the 2020 amendme
 
 This is a chart of the annual values of the New Zealand Steel unit allocations when priced with a mean May price. May is the month when the units are transferred to New Zealand Steel's ownership.
 
-![](Fonterra-units-marketvalue-720by540a.svg)
+![](NZsteel-units-marketvalue-720by540.svg)
 
 The 16 million emissions units allocated to New Zealand Steel have a total value of $308 million. The proposed grant to reduce steel recycling emissions by electrification, is $140 million.
 
