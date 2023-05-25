@@ -419,8 +419,8 @@ box()
 dev.off() 
 
 # chart only units allocated and the ETS liability 
-#svg(filename="NZsteel-Allocation-GHGs-line-2010-2020-720by540v3a.svg", width = 8, height = 6, pointsize = 12, onefile = FALSE, family = "sans", bg = "white", antialias = c("default", "none", "gray", "subpixel"))
-png("NZsteel-Allocation-GHGs-line-2010-2020-560by420-v3a.png", bg="white", width=560, height=420,pointsize = 12)
+svg(filename="NZsteel-Allocation-GHGs-line-2010-2020-720by540v3a.svg", width = 8, height = 6, pointsize = 12, onefile = FALSE, family = "sans", bg = "white", antialias = c("default", "none", "gray", "subpixel"))
+#png("NZsteel-Allocation-GHGs-line-2010-2020-560by420-v3a.png", bg="white", width=560, height=420,pointsize = 12)
 par(mar=c(2.7,2.7,1,1)+0.1)
 plot(NZsteelunits[["Year"]],NZsteelunits[["Allocation"]]/10^6,ylim=c(0,2.9),tck=0.01,axes=FALSE,ann=FALSE, type="n",las=1)
 axis(side=1, tck=0.01, las=0, lwd = 1, at = c(2010:2021), labels = c(2010:2021), tick = TRUE)
