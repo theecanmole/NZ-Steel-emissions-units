@@ -1,7 +1,7 @@
 # NZ Steel free industrial allocation of emissions units 2010 to 2021
 # https://www.stuff.co.nz/business/130935028/tasman-steel-posts-340m-profit-with-benefit-of-117m-of-free-carbon-credits
 # https://www.stuff.co.nz/business/114961557/very-real-risk-nz-steel-could-be-forced-to-pull-out-of-auckland
-# https://www.stuff.co.nz/business/farming/83230321/companies-revealed-for-buying-fraudulent-carbon-credits?rm=a
+# https://www.stuff.co.nz/business/farming/83230321/companies-revealed-for-buying-fraudulent-carbon-credits
 # EPA industrial allocation data https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/industrial-allocations/decisions/
 # link @ 11/01/2023 
 https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Reports/Industrial-Allocations/Industrial-Allocations-Final-Decisions_2022.xlsx
@@ -148,7 +148,7 @@ tibble [12 × 3] (S3: tbl_df/tbl/data.frame)
  $ Allocation: num [1:12] 494704 989304 1003730 1029352 1073489 ...
  $ Value     : num [1:12] 8696896 19627791 6253238 1996943 4379835 ... 
 
- # Create a .csv formatted data file
+# Create a .csv formatted data file
 write.csv(NZsteelunits, file = "NZsteelunits.csv", row.names = FALSE)
 # read csv file back in
 NZsteelunits <- read.csv("NZsteelunits.csv") 
@@ -564,4 +564,3 @@ mtext(side=2,cex=1, line=-1.2,expression(paste("million tonnes C", O[2], "-e")))
 mtext(side=4,cex=0.75, line=0.05,R.version.string)
 box()
 dev.off()
-

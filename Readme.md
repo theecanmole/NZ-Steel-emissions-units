@@ -1,12 +1,79 @@
 ## New Zealand Steel Limited free industrial allocation of emissions units 2010 to 2021
 
-### If it's worth paying New Zealand Steel to reduce emissions shouldn't we first stop paying them to increase emissions?
+### If it's worth paying New Zealand Steel to reduce emissions shouldn't we first stop paying them to increase emissions? 27/05/2023
 
-The Government made an extremely exaggerated announcement on Sunday 21 May 2023 that it will contribute $140 million to a New Zealand Steel project to electrify (replace coal thermal heat) their steel and iron recycling process. Thus reducing future emissions of greenhouse gases.
+<i>The $140 million emissions subsidy to New Zealand Steel is not just corporate welfare, it's greenwashing and it's [climate bright siding]((http://www.climatecodered.org/p/brightsiding.html) and it's our insane emissions trading scheme. Can we have our 16 million free emissions units back?</i>
 
-NZ’s biggest ever emissions reduction project unveiled the title breathlessly gushed.
+I am still blown away by the [Government's announcement](https://www.beehive.govt.nz/release/nz%E2%80%99s-biggest-ever-emissions-reduction-project-unveiled) a week ago that they will pay New Zealand Steel Ltd $140 million over three years to adopt an [electric arc furnace](https://www.nzsteel.co.nz/assets/NZ-Steel-Media-Release_Electric-Arc-Furnace_21-May-web.pdf that reduces the emissions intensity of steel smelting.
 
-If only the hyperbole flowing from the joint Government and Te Tari Tiaki Pūngao/EECA announcement matched the appalling reality of how dysfunctional the overall picture of New Zealand Steel's treatment is under the emissions trading scheme.
+I am also blown away by the over-egging of the project by the Chris Hipkins, Megan Woods and James Shaw.
+
+Hipkins states: <blockquote>“The economics of this really stack up, especially compared to current carbon prices. The lifetime abatement cost is forecast at $16.20 per tonne. Current carbon prices are around $55 per tonne. In the long term this saves the Government and the country money."</blockquote>
+
+And I am also aghast at the largely uncritical treatment of the announcement in the media. Much comment fails to look at the NZ Steel deal in the context of  our dreadful emissions trading scheme (or ETS). Some comment has included basic errors of fact such as saying New Zealand Steel is exempt from the ETS.
+
+[Massive emissions cutting deal](https://www.stuff.co.nz/national/politics/132102525/government-announces-massive-emissionscutting-deal-with-nz-steel-contact-energy) says Luke Malpass in Stuff.
+
+James Shaw is quoted by RNZ <blockquote>"The lifetime abatement cost is forecast at $16.20 per tonne. Current carbon prices are around $55 per tonne. In the long term this saves the government and the country money."</blockquote>
+
+Duncan Greive at The Spinoff calls it the [beginning of a new climate pragmatism](https://thespinoff.co.nz/politics/23-05-2023/why-did-we-give-140m-to-a-shady-australian-corporate-because-we-had-no-choice).
+
+Duncan Greive makes this factual error.<blockquote>"NZ Steel was already exempt from the Emissions Trading Scheme (ETS), having baldly stated that it would have shut the factory were it to have to pay the cost of its emissions"</blockquote>
+
+New Zealand Steel is not exempt from the emissions trading scheme. But yes they have threatened to close the smelter.
+  
+Michael Neilson in the Herald says this [initiative is remarkable](https://www.nzherald.co.nz/nz/politics/why-government-is-making-a-big-deal-of-the-nz-steel-climate-change-emissions-initiative/YNO6SR4RJNFVLH3GJGYTB44P54/).
+
+Bernard Hickey agrees with Hipkins and says it's [$140 million well spent at $16.20/tonne](https://thekaka.substack.com/p/140m-well-spent-at-1620tonne#details).
+
+What's the relevance of Hickey and Hipkins comparing the predicted cost per tonne of emissions reduced with the current market price of emission units? 
+
+It's emission pricing. Carbon prices are emblematic of having an emissions trading scheme. And in theory New Zealand is big on emissions pricing. 
+The Ministry for the Environment keeps saying ["the New Zealand Emissions Trading Scheme is the Government’s main tool for reducing greenhouse gas emissions"](https://environment.govt.nz/what-government-is-doing/areas-of-work/climate-change/ets/). New Zealand has had an emissions trading scheme since 2010. It includes the steel industry.
+
+This is the emissions pricing logic. New Zealand Steel's emissions are covered by the ETS and are subject to an emissions price. NZ Steel has a project to reduce emissions that will cost less then the current market price of units. It's overall emissions price will reduce. The project pays for itself. That's what emissions trading schemes do.
+
+So why isn't NZ Steel paying 100% of the cost? Why is the Government paying almost half? Why are Hipkins, Wood and Shaw saying this subsidy isn't just necessary but it's good policy?
+
+The answer is the bullshit that is the emissions trading scheme.
+[Tom Pullar-Strecker of Stuff](https://www.stuff.co.nz/business/132108154/the-real-deal-on-nz-steel-climate-change-win-or-corporate-welfare), who seems the only journalist to give a skeptical view, correctly notes New Zealand Steel would never fund the electric arc furnace as they receive so many free emission units under the [ETS Industrial Allocation rules](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/industrial-allocations/).
+
+Pullar-Strecker has also noted that in New Zealand Steel's last annual report, it received [free emission units worth $117 million](https://www.stuff.co.nz/business/130935028/tasman-steel-posts-340m-profit-with-benefit-of-117m-of-free-carbon-credits). 
+
+And that the chief executive confirmed that they received so many free emission units that carbon costs were ["neutralised"](https://www.stuff.co.nz/business/130935028/tasman-steel-posts-340m-profit-with-benefit-of-117m-of-free-carbon-credits) including indirect ETS costs from electricity prices.
+
+Just to repeat the point again. New Zealand Steel are allocated far more free emission units than their actual smelter emissions. They have never needed to buy any units. 
+
+Here is the chart of actual final allocation of emission units compared to the estimated actual steel emissions from the Greenhouse Gas Inventory.
+
+![](NZsteel-Allocation-GHGs-line-2010-2020-720by540v3a.svg)
+
+What's that mean? Buying emission units and surrendering them back to the Government annually is the essence of an emissions price.
+
+Receiving free emission units and surrendering some of them back to the Government (you are always a net seller) is the opposite of an emissions price.
+
+Receiving free emission units is in fact payment of a subsidy for New Zealand Steel's emissions. 
+
+If New Zealand Steel increased it's emissions they would receive more units. If New Zealand Steel unilaterally somehow reduced it's emissions they would receive fewer units.
+
+So if New Zealand Steel installed the electric arc furnace, and reduced emissions from its Glenbrook mill by 800,000 tonnes, they would be financially worse off as they would lose more than 800,000 emission units. That is how insane the emissions trading scheme is.
+
+This chart shows in the green bars the $308 million value of the unit allocation subsidy to NZ Steel from 2010 to 2021 and highlighted in red is the Government's electric arc furnace grant of $140 million over three years 2022 to 2024.
+
+![](NZsteel-freeunits-GIDI-720by540.svg)
+
+Our emissions pricing scheme is so flawed it incentivises manintaining and increasing emissions. It is 180 degrees in the wrong direction. This is emissions trading insanity.
+
+If it's worth paying New Zealand Steel to reduce emissions shouldn't we first stop paying them to increase emissions?
+
+
+### New Zealand Steel reduces emissions - gets paid millions: New Zealand Steel increases emissions - gets paid millions
+
+The Government made an extremely exaggerated [announcement on Sunday 21 May 2023](https://www.beehive.govt.nz/release/nz%E2%80%99s-biggest-ever-emissions-reduction-project-unveiled) that it will contribute $140 million to a [New Zealand Steel project](https://www.nzsteel.co.nz/assets/NZ-Steel-Media-Release_Electric-Arc-Furnace_21-May-web.pdf) to electrify (replace coal thermal heat) their steel and iron recycling process. Thus reducing future emissions of greenhouse gases.
+
+[NZ’s biggest ever emissions reduction project unveiled](https://www.beehive.govt.nz/release/nz%E2%80%99s-biggest-ever-emissions-reduction-project-unveiled) the media release breathlessly gushed.
+
+If only the hyperbole flowing from the joint Government and [Te Tari Tiaki Pūngao/EECA announcement](https://www.eeca.govt.nz/about/news-and-corporate/news/nzs-biggest-ever-emissions-reduction-project-unveiled/) matched how dysfunctional [New Zealand Steel's treatment](https://rwmjohnson.blogspot.com/search/label/New%20Zealand%20Steel) is under the emissions trading scheme.
 
 New Zealand Steel has never faced an emissions price under the emissions trading scheme.
 
@@ -20,11 +87,11 @@ The effect of the excessively generous allocation of units is to completely insu
 
 Notwithstanding this extremely generous subsidy, back in 2012 and 2013 New Zealand Steel still engaged in [windfall arbitrage profiteering](http://bit.ly/1TQUr5C) by buying dirt cheap international hot air emissions units. The point being that New Zealand Steel did not need any additional units to surrender as the allocation of units already exceeded the liability to surrender units in those two years.
 
-The annual amount of free emissions units allocated is [proportional to the steel production](https://www.beehive.govt.nz/release/revised-ets-balances-nz%E2%80%99s-environment-economy). If production and emissions increase, the amount of free emission units allocated increases.
+The annual amount of free emissions units allocated is [proportional to the steel production](https://en.wikipedia.org/wiki/New_Zealand_Emissions_Trading_Scheme#Allocation_of_NZ_Units_to_trade-exposed_activities). If production and emissions increase, the amount of free emission units allocated increases.
 
-Conversely, if steel production and emissions decline, the amount of free emission units decreases. Free allocation of emission units incentivises increased emissions. And disincentivises reduced emissions.
+Conversely, if steel production and emissions decline, the amount of free emission units decreases. [Free allocation of emission units](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/industrial-allocations/) incentivises increased emissions. And disincentivises reduced emissions.
 
-New Zealand Steel has been allocated a total of 16 million emission units between 2010 to 2021. This is the Government paying New Zealand Steel to emit greenhouse gas.
+New Zealand Steel has been [allocated 16 million emission units](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/industrial-allocations/decisions/) between 2010 to 2021. This is the Government paying New Zealand Steel to emit greenhouse gas.
 
 New Zealand's emissions units now have an enhanced value due to the 2020 amendments to the Climate Change Response Act.
 
