@@ -2,9 +2,9 @@
 
 ### If it's worth paying New Zealand Steel to reduce emissions shouldn't we first stop paying them to increase emissions? 27/05/2023
 
-<i>The $140 million emissions subsidy to New Zealand Steel is not just corporate welfare, it's greenwashing and it's [climate bright siding]((http://www.climatecodered.org/p/brightsiding.html) and it's our insane emissions trading scheme. Can we have our 16 million free emissions units back?</i>
+<i>The $140 million emissions subsidy to New Zealand Steel is not just corporate welfare, it's greenwashing and it's [climate bright siding](http://www.climatecodered.org/p/brightsiding.html) and it's our insane emissions trading scheme. Can we have our 16 million free emissions units back?</i>
 
-I am still blown away by the [Government's announcement](https://www.beehive.govt.nz/release/nz%E2%80%99s-biggest-ever-emissions-reduction-project-unveiled) a week ago that they will pay New Zealand Steel Ltd $140 million over three years to adopt an [electric arc furnace](https://www.nzsteel.co.nz/assets/NZ-Steel-Media-Release_Electric-Arc-Furnace_21-May-web.pdf that reduces the emissions intensity of steel smelting.
+I am still blown away by the [Government's announcement](https://www.beehive.govt.nz/release/nz%E2%80%99s-biggest-ever-emissions-reduction-project-unveiled) a week ago that they will pay New Zealand Steel Ltd $140 million over three years to adopt an [electric arc furnace](https://www.nzsteel.co.nz/assets/NZ-Steel-Media-Release_Electric-Arc-Furnace_21-May-web.pdf) that reduces the emissions intensity of steel smelting.
 
 I am also blown away by the over-egging of the project by the Chris Hipkins, Megan Woods and James Shaw.
 
