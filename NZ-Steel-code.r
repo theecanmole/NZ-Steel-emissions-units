@@ -184,11 +184,7 @@ steel <- as.numeric(emissions[371,3:34])
 str(steel)
  num [1:32] 1307 1421 1499 1535 1417 ...
 # print to screen
-steel
- [1] 1306.735 1421.220 1498.642 1535.022 1416.737 1493.641 1455.552 1295.650
- [9] 1395.999 1441.968 1429.077 1500.045 1464.779 1658.224 1670.604 1623.167
-[17] 1625.343 1645.659 1539.205 1513.433 1696.438 1685.892 1664.743 1708.143
-[25] 1732.380 1767.870 1712.053 1758.300 1694.406 1661.611 1578.554 1718.126
+
 # convert from Kilotonnes to tonnes to match free allocation 
 steel <-c(steel * 10^3)
 str(steel)
@@ -201,6 +197,9 @@ steel
 length(steel)
 [1] 12
 # the inventory steel emissions has 12 values which matchs the allocations dataframe 12 rows 2010 to 2021 the 
+# what is mass of emissions?
+sum(steel) 
+[1] 20378517 
 
 # OUTDATED add 2021 steel emissions from Participant report 1889288 tonnes
 # OUTDATED steel <- c(steel, 1889288)

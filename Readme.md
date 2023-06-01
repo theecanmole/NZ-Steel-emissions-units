@@ -58,7 +58,7 @@ If New Zealand Steel increased it's emissions they would receive more units. If 
 
 So if New Zealand Steel installed the electric arc furnace, and reduced emissions from its Glenbrook mill by 800,000 tonnes, they would be financially worse off as they would lose more than 800,000 emission units. That is how insane the emissions trading scheme is.
 
-This chart shows in the green bars the $308 million value of the unit allocation subsidy to NZ Steel from 2010 to 2021 and highlighted in red is the Government's electric arc furnace grant of $140 million over three years 2022 to 2024.
+This chart shows in the reddish bars the $308 million value of the unit allocation subsidy to NZ Steel from 2010 to 2021 and highlighted in green is the Government's electric arc furnace grant of $140 million split evenly over the three years 2022 to 2024.
 
 ![](NZsteel-freeunits-GIDI-720by540.svg)
 
@@ -67,7 +67,7 @@ Our emissions pricing scheme is so flawed it incentivises manintaining and incre
 If it's worth paying New Zealand Steel to reduce emissions shouldn't we first stop paying them to increase emissions?
 
 
-### New Zealand Steel reduces emissions - gets paid millions: New Zealand Steel increases emissions - gets paid millions
+### New Zealand Steel reduces emissions - gets paid millions: New Zealand Steel increases emissions - gets paid millions 25 May 2023
 
 The Government made an extremely exaggerated [announcement on Sunday 21 May 2023](https://www.beehive.govt.nz/release/nz%E2%80%99s-biggest-ever-emissions-reduction-project-unveiled) that it will contribute $140 million to a [New Zealand Steel project](https://www.nzsteel.co.nz/assets/NZ-Steel-Media-Release_Electric-Arc-Furnace_21-May-web.pdf) to electrify (replace coal thermal heat) their steel and iron recycling process. Thus reducing future emissions of greenhouse gases.
 
@@ -107,7 +107,7 @@ If it's worth paying New Zealand Steel to reduce emissions shouldn't we first st
 
 ### Should a major emitter like New Zealand Steel Limited be accumulating a stockpile of emissions units under the emissions trading scheme?
 
-Every year since the [New Zealand Emissions Trading Scheme](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/) began, [New Zealand Steel Limited](https://en.wikipedia.org/wiki/New_Zealand_Steel) has received more emissions units under the Emissions Trading Scheme [Industrial Allocation](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/industrial-allocations/) rules then it has had to [surrender](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/participating-in-the-ets/surrendering-units/) to the Government for it's emissions.
+Every year since the [New Zealand Emissions Trading Scheme](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/) began, [New Zealand Steel Limited](https://en.wikipedia.org/wiki/New_Zealand_Steel) has received more emissions units under the Emissions Trading Scheme [Industrial Allocation](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/industrial-allocations/) rules then it has had to [surrender](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/participating-in-the-ets/surrendering-units/) to the Government for it's emissions.	
 
 Should the emissions trading scheme result in New Zealand Steel accumulating a stockpile of emissions units? In a sensibly designed emissions trading scheme, shouldn't the net 'flow' of emissions units be from the emitter, New Zealand Steel, to the Government? And not from the Government to the emitter?
 
@@ -120,7 +120,7 @@ I know these emissions are from the New Zealand Steel Limited's steel smelting p
 I have marked that data point with a purple point. The [2020 Greenhouse Gas Inventory](https://environment.govt.nz/publications/new-zealands-greenhouse-gas-inventory-1990-2020/) steel emissions are 1,578,554; the green point. The purple and green data points overlap on the graph. So I think it's reasonable to use the GHG Inventory steel industry emissions as an estimate of New Zealand Steel's actual emissions from 1990 to 2020.
 
 In October 2022, the Environmental Protection Authority published ["ETS Participant Emissions"](https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Reports/Emissions-returns/Participant-Emissions-Report.pdf) for the calendar year 2021.
-
+ 
 In that report, as in 2020, New Zealand Steel's emissions are split between three categories; 1) "Importing coal" 989,459 tonnes page 17, 2) "Producing iron or steel" 43,466 tonnes page 21, 3) "Stationary energy purchasing coal" 856,363 tonnes page 33.
 
 So 43466 + 989459 + 856363 = 1889288 tonnes or 1,889,288 tonnes of emissions from the steel smelter for 2021. I have again marked the point with a purple point.
