@@ -263,7 +263,9 @@ NZsteelunits[["Footprint"]] <- NZsteelunits[["Allocation"]] / NZsteelunits[["two
 
 # add variable that is the annual surplus, the annual sum of allocated units less the estimate of units surrendered (ETS liability)
 NZsteelunits[["Overallocation"]] <- NZsteelunits[["Allocation"]] - NZsteelunits[["ETSliability"]] 
-
+# What is the sum of the annual over allocations?
+sum(NZsteelunits[["Overallocation"]])
+[1] 3113329 #  3,113,329
 # what is the cumulative over allocation by the end of 2021?
 sum(NZsteelunits[["Overallocation"]]/10^6)
 [1] 3.113329 # million units
@@ -351,6 +353,8 @@ teal/Mountain Meadow russet/Bamboo blue/Deluge pink/Cerise green/Vida Loca musta
 # #ff0000 "red" 
 # #6600cc "purple"
 # #660066 "pompadour" (another purple)
+# #D13D19 'orange flame'    / Thunderbird
+# #530D29 'windsor wine' / Maroon Oak
 brewer.pal("Dark2",n=3)
 [1] "#1B9E77" "#D95F02" "#7570B3"  # teal khaki mauve
 brewer.pal("Dark2",n=4)
@@ -515,7 +519,6 @@ mtext(side=4,cex=0.75, line=0.05,R.version.string)
 box()
 dev.off()
 
-
 # chart with darkgray for all variables except the cumulative stock pile of emission units
 #svg(filename="NZsteel-Allocation-GHGs-line-2010-2020-720by540v7.svg", width = 8, height = 6, pointsize = 12, onefile = FALSE, family = "sans", bg = "white", antialias = c("default", "none", "gray", "subpixel"))  
 png("NZsteel-Allocation-GHGs-line-2010-2020-560by420-v7.png", bg="white", width=560, height=420,pointsize = 12)
@@ -542,11 +545,21 @@ mtext(side=4,cex=0.75, line=0.05,R.version.string)
 box()
 dev.off()
 
-# chart the actual emissions , the allocation and the footprint of allocation
+# chart the actual emissions , the allocation and the emissions footprint of allocation
 "#E6AB02" # mustard/Corn
-
-svg(filename="NZsteel-Allocation-GHGs-line-2010-2020-720by540v8.svg", width = 8, height = 6, pointsize = 12, onefile = FALSE, family = "sans", bg = "white", antialias = c("default", "none", "gray", "subpixel"))  
-#png("NZsteel-Allocation-GHGs-line-2010-2020-560by420-v8.png", bg="white", width=560, height=420,pointsize = 12)
+#A6761D Mandalay brown
+# what is the total mass of emissions pemitted by free emission units?  24,981,914
+sum(NZsteelunits[["Footprint"]]) 
+[1] 24981914
+# what is the total Inventory steel sector emissions?   [1] 20,378,517
+sum(NZsteelunits[["Emissions"]])
+[1] 20378517 
+# what are the total steel sector allocation of emissions?        [1] 16,215,689
+sum(NZsteelunits[["Allocation"]])
+[1] 16215689
+# chart
+#svg(filename="NZsteel-Allocation-GHGs-line-2010-2020-720by540v8.svg", width = 8, height = 6, pointsize = 12, onefile = FALSE, family = "sans", bg = "white", antialias = c("default", "none", "gray", "subpixel"))  
+png("NZsteel-Allocation-GHGs-line-2010-2020-560by420-v8.png", bg="white", width=560, height=420,pointsize = 12)
 par(mar=c(2.7,2.7,1,1)+0.1)
 plot(NZsteelunits[["Year"]],NZsteelunits[["Allocation"]]/10^6,ylim=c(0,2.9), tck=0.01,axes=FALSE,ann=FALSE,col="#A6761D",type="l",las=1)
 axis(side=1, tck=0.01, las=0, lwd = 1, at = c(2010:2021), labels = c(2010:2021), tick = TRUE)
@@ -557,8 +570,9 @@ lines(NZsteelunits[["Year"]],NZsteelunits[["Allocation"]]/10^6,col="#D95F02",lwd
 points(NZsteelunits[["Year"]],NZsteelunits[["Allocation"]]/10^6,col="#D95F02",cex=1,pch=17)
 lines(NZsteelunits[["Year"]],NZsteelunits[["Footprint"]]/10^6,col="#E6AB02", lwd=1)
 points(NZsteelunits[["Year"]],NZsteelunits[["Footprint"]]/10^6,col="#E6AB02",cex=0.9,pch=15 )
-legend(2016, 1, cex=1, bty = "n", c("Actual Emissions","Emission units allocated","Emissions footprint of allocation"), col=c("#1B9E77","#D95F02","#E6AB02") , text.col = 1, lty = 1, pch = c(16,17,15))
-mtext(side=3,cex=1.5,line=-3.5, expression(paste("NZ Steel Limited emissions footprint of \nallocation of emissions units 2010 2021")) ) 
+legend(2013, 0.8, cex=1, bty = "n", c("Emissions footprint of allocation","Actual emissions","Emission units allocated"), col=c("#E6AB02","#1B9E77","#D95F02") , text.col = 1, lty = 1, pch = c(15,16,17))
+mtext(side=3,cex=1.5,line=-3.5, expression(paste("New Zealand Steel Limited emissions footprint of \nfree allocation of emissions units 2010 to 2021")) ) 
+mtext(side=3,cex=1.1,line=-6, expression(paste("The 16m free units allowed an emissions footprint \nof 25m tonnes when steel emissions were 20m tonnes")) ) 
 mtext(side=1,line=-1.25,cex=1,"Data: NZ Greenhouse Gas Inventory 2021, EPA Industrial Allocations 2021")
 mtext(side=2,cex=1, line=-1.2,expression(paste("million tonnes C", O[2], "-e")))
 mtext(side=4,cex=0.75, line=0.05,R.version.string)
