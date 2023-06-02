@@ -31,7 +31,12 @@ What's the relevance of Hickey and Hipkins comparing the predicted cost per tonn
 It's emission pricing. Carbon prices are emblematic of having an emissions trading scheme. And in theory New Zealand is big on emissions pricing. 
 The Ministry for the Environment keeps saying ["the New Zealand Emissions Trading Scheme is the Government’s main tool for reducing greenhouse gas emissions"](https://environment.govt.nz/what-government-is-doing/areas-of-work/climate-change/ets/). New Zealand has had an emissions trading scheme since 2010. It includes the steel industry.
 
-This is the emissions pricing logic. New Zealand Steel's emissions are covered by the ETS and are subject to an emissions price. NZ Steel has a project to reduce emissions that will cost less then the current market price of units. It's overall emissions price will reduce. The project pays for itself. That's what emissions trading schemes do.
+This is the emissions pricing logic. 
+* New Zealand Steel's emissions are covered by the ETS and are subject to an emissions price. 
+* NZ Steel has a project to reduce emissions that will cost less then the current market price of units. 
+* It's overall emissions price will reduce. 
+* The project pays for itself. 
+That's what emissions trading schemes do.
 
 So why isn't NZ Steel paying 100% of the cost? Why is the Government paying almost half? Why are Hipkins, Wood and Shaw saying this subsidy isn't just necessary but it's good policy?
 
