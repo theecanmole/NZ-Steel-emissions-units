@@ -1,8 +1,11 @@
 # NZ Steel free industrial allocation of emissions units 2010 to 2021
+
 # https://www.stuff.co.nz/business/130935028/tasman-steel-posts-340m-profit-with-benefit-of-117m-of-free-carbon-credits
 # https://www.stuff.co.nz/business/114961557/very-real-risk-nz-steel-could-be-forced-to-pull-out-of-auckland
 # https://www.stuff.co.nz/business/farming/83230321/companies-revealed-for-buying-fraudulent-carbon-credits
 # EPA industrial allocation data https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/industrial-allocations/decisions/
+# link 15/08/2024
+https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Reports/Industrial-Allocations/Industrial-Allocations-Final-Decisions-Report-Aug-2024.xlsx
 # link @ 11/01/2023 
 https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Reports/Industrial-Allocations/Industrial-Allocations-Final-Decisions_2022.xlsx
 
@@ -24,35 +27,42 @@ getwd()
 [1] "/home/user/R/NZsteel"
 setwd("/home/user/R/NZsteel")
 
-# obtain 2010 to 2021 emission unit allocation to industry data from EPA
-
+# obtain emission unit allocation to industry data from EPA
+download.file("https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Reports/Industrial-Allocations/Industrial-Allocations-Final-Decisions-Report-Aug-2024.xlsx","Industrial-Allocations/Industrial-Allocations-Final-Decisions-Report-Aug-2024.xlsx")
+Warning messages:
+1: In download.file("https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Reports/Industrial-Allocations/Industrial-Allocations-Final-Decisions-Report-Aug-2024.xlsx",  :
+  URL https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Reports/Industrial-Allocations/Industrial-Allocations-Final-Decisions-Report-Aug-2024.xlsx: cannot open destfile 'Industrial-Allocations/Industrial-Allocations-Final-Decisions-Report-Aug-2024.xlsx', reason 'No such file or directory'
+2: In download.file("https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Reports/Industrial-Allocations/Industrial-Allocations-Final-Decisions-Report-Aug-2024.xlsx",  :
+  download had nonzero exit status
+# I downloaded manually   
 #download.file("https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Reports/Industrial-Allocations/Industrial-Allocations-Final-Decisions_2022.xlsx","Industrial-Allocations-Final-Decisions_2022.xlsx")
 
 # check names of work sheets
-excel_sheets("Industrial-Allocations-Final-Decisions_2022.xlsx")
+excel_sheets("Industrial-Allocations-Final-Decisions-Report-Aug-2024.xlsx")
 [1] "IA Final Decisions"
-
 # read in allocation of emissions units data
-Allocations <- read_excel("Industrial-Allocations-Final-Decisions_2022.xlsx", sheet = "IA Final Decisions",skip=3)
+Allocations <- read_excel("Industrial-Allocations-Final-Decisions-Report-Aug-2024.xlsx", sheet = "IA Final Decisions",skip=3)
+# read in allocation of emissions units data
+#Allocations <- read_excel("Industrial-Allocations-Final-Decisions_2022.xlsx", sheet = "IA Final Decisions",skip=3)
 # check dataframe variables
 str(Allocations) 
-tibble [1,286 × 4] (S3: tbl_df/tbl/data.frame)
- $ Activity        : chr [1:1207] "Aluminium smelting" "Burnt lime" "Burnt lime" "Burnt lime" ...
- $ Applicant’s name: chr [1:1207] "New Zealand Aluminium Smelters Limited" "Graymont (NZ) Limited" "Holcim (New Zealand) Limited" "Perry Resources (2008) Ltd" ...
- $ Year            : num [1:1207] 2010 2010 2010 2010 2010 2010 2010 2010 2010 2010 ...
- $ Final Allocation: num [1:1207] 210421 47144 3653 4712 948 ...
+tibble [1,472 × 4] (S3: tbl_df/tbl/data.frame)
+ $ Activity        : chr [1:1472] "Fresh tomatoes" "Protein meal" "Protein meal" "Tissue paper" ...
+ $ Applicant’s name: chr [1:1472] "A1 TOMS LIMITED" "Affco New Zealand Limited" "Alliance Group Limited" "Asaleo Care New Zealand Limited" ...
+ $ Year            : num [1:1472] 2023 2023 2023 2023 2023 ...
+ $ Final Allocation: num [1:1472] 290 12139 10604 36823 577 ...
 
 # revise and shorten column names
 colnames(Allocations) <- c("Activity", "Applicant", "Year", "Allocation") 
 # check range of variables 
 summary(Allocations)   
-  Activity          Applicant              Year        Allocation       
- Length:1286        Length:1286        Min.   :2010   Min.   :      1.0  
- Class :character   Class :character   1st Qu.:2012   1st Qu.:    180.8  
- Mode  :character   Mode  :character   Median :2014   Median :   1142.0  
-                                       Mean   :2015   Mean   :  47896.6  
-                                       3rd Qu.:2018   3rd Qu.:   7580.0  
-                                       Max.   :2021   Max.   :2145482.0 
+   Activity          Applicant              Year        Allocation     
+ Length:1472        Length:1472        Min.   :2010   Min.   :      1  
+ Class :character   Class :character   1st Qu.:2012   1st Qu.:    198  
+ Mode  :character   Mode  :character   Median :2015   Median :   1182  
+                                       Mean   :2016   Mean   :  49857  
+                                       3rd Qu.:2019   3rd Qu.:   8148  
+                                       Max.   :2023   Max.   :2145482 
                                        
 # separate allocations of emissions units data into years
 nzu2010 <- filter(Allocations, Year =="2010")
@@ -149,13 +159,13 @@ $ Allocation: num [1:12] 494704 989304 1003730 1029352 1073489 ...
 $ Value     : num [1:12] 8696896 19627791 6253238 1996943 4379835 ...
  
 # omit first two columns as they are redundant
-NZsteelunits <- NZsteelunits[,3:5]
+NZsteelunits <- NZsteelunits[,c(2:4)]
 
 str(NZsteelunits)
-tibble [12 × 3] (S3: tbl_df/tbl/data.frame)
- $ Year      : num [1:12] 2010 2011 2012 2013 2014 ...
- $ Allocation: num [1:12] 494704 989304 1003730 1029352 1073489 ...
- $ Value     : num [1:12] 8696896 19627791 6253238 1996943 4379835 ... 
+tibble [14 × 3] (S3: tbl_df/tbl/data.frame)
+ $ Applicant : chr [1:14] "New Zealand Steel Development Limited" "New Zealand Steel Development Limited" "New Zealand Steel Development Limited" "New Zealand Steel Development Limited" ...
+ $ Year      : num [1:14] 2023 2022 2021 2020 2019 ...
+ $ Allocation: num [1:14] 1830000 1910503 2145482 2030166 2118983 ...
 
 # Create a .csv formatted data file
 write.csv(NZsteelunits, file = "NZsteelunits.csv", row.names = FALSE)
