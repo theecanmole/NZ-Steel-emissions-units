@@ -529,11 +529,11 @@ box()
 dev.off()
 
 # chart actual emissions, units allocated and ets liability and overallocation and add emissions reduction units (ERU) owned
-#svg(filename="NZsteel-Allocation-GHGs-line-2010-2020-720by540v5.svg", width = 8, height = 6, pointsize = 12, onefile = FALSE, family = "sans", bg = "white", antialias = c("default", "none", "gray", "subpixel")) 
-png("NZsteel-Allocation-GHGs-line-2010-2020-560by420-v5.png", bg="white", width=560, height=420,pointsize = 12)
+svg(filename="NZsteel-Allocation-GHGs-line-2010-2020-720by540v5.svg", width = 8, height = 6, pointsize = 12, onefile = FALSE, family = "sans", bg = "white", antialias = c("default", "none", "gray", "subpixel")) 
+#png("NZsteel-Allocation-GHGs-line-2010-2020-560by420-v5.png", bg="white", width=560, height=420,pointsize = 12)
 par(mar=c(2.7,2.7,1,1)+0.1)
 plot(NZsteelunits[["Year"]],NZsteelunits[["Allocation"]]/10^6,ylim=c(0,2.9),tck=0.01,axes=FALSE,ann=FALSE, type="n",las=1)
-axis(side=1, tck=0.01, las=0, lwd = 1, at = c(2010:2021), labels = c(2010:2021), tick = TRUE)
+axis(side=1, tck=0.01, las=0, lwd = 1, at = c(2010:2023), labels = c(2010:2023), tick = TRUE)
 axis(side=2, tck=0.01, las=2, line = NA,lwd = 1, tick = TRUE)
 lines(NZsteelunits[["Year"]],NZsteelunits[["Emissions"]]/10^6,col="#1B9E77",lwd=1)
 points(NZsteelunits[["Year"]],NZsteelunits[["Emissions"]]/10^6,col="#1B9E77",cex=1,pch=16)
@@ -547,8 +547,8 @@ points(NZsteelunits[["Year"]],NZsteelunits[["ERU"]]/10^6,col="#66A61E",cex=1.25,
 lines(NZsteelunits[["Year"]],NZsteelunits[["ERU"]]/10^6,col="#66A61E",cex=1.25,lwd=1)
 legend(2011, 2.5, cex=1.1, bty = "n", c("Actual emissions","Emission units allocated","Emissions x 'two for one' equals ETS liability","Emission Removal Units ERUs"), col=c("#1B9E77","#D95F02","#7570B3","#66A61E") , text.col = 1, lty = 1, pch = c(16,17,15,16))
 legend(2011, 0.65, cex=1.1, bty = "n", c("Allocation less ETS liability equals surplus units"), col=c("#E7298A"), text.col = 1, lty = 1, pch = c(18))
-mtext(side=3,cex=1.5,line=-3.5, expression(paste("NZ Steel Limited overallocation of emissions units\n above ETS liability 2010 to 2021"))) 
-mtext(side=1,line=-1.25,cex=1,"Data: New Zealand’s Greenhouse Gas Inventory 1990 - 2021, EPA Industrial Allocations 2021")
+mtext(side=3,cex=1.5,line=-3.5, expression(paste("NZ Steel Limited overallocation of emissions units\n above ETS liability 2010 to 2023"))) 
+mtext(side=1,line=-1.25,cex=1,"Data: New Zealand’s Greenhouse Gas Inventory 1990 - 2022, EPA Industrial Allocations 2023")
 mtext(side=2,cex=1, line=-1.2,expression(paste("million tonnes C", O[2], "-e")))
 mtext(side=4,cex=0.75, line=0.05,R.version.string)
 box()
@@ -559,7 +559,7 @@ svg(filename="NZsteel-Allocation-GHGs-line-2010-2020-720by540v6.svg", width = 8,
 #png("NZsteel-Allocation-GHGs-line-2010-2020-560by420-v6.png", bg="white", width=560, height=420,pointsize = 12)
 par(mar=c(2.7,2.7,1,1)+0.1)
 plot(NZsteelunits[["Year"]],NZsteelunits[["Stockpile"]]/10^6,ylim=c(0,5.8),tck=0.01,axes=FALSE,ann=FALSE,col="#A6761D",type="l",las=1)
-axis(side=1, tck=0.01, las=0, lwd = 1, at = c(2010:2021), labels = c(2010:2021), tick = TRUE)
+axis(side=1, tck=0.01, las=0, lwd = 1, at = c(2010:2023), labels = c(2010:2023), tick = TRUE)
 axis(side=2, tck=0.01, las=2, line = NA,lwd = 1, tick = TRUE)
 points(NZsteelunits[["Year"]],NZsteelunits[["Stockpile"]]/10^6,col="#A6761D",cex=1,pch=19)
 lines(NZsteelunits[["Year"]],NZsteelunits[["Emissions"]]/10^6,col="#1B9E77",lwd=1)
@@ -573,19 +573,19 @@ points(NZsteelunits[["Year"]],NZsteelunits[["Overallocation"]]/10^6,col="#E7298A
 points(NZsteelunits[["Year"]],NZsteelunits[["ERU"]]/10^6,col="#66A61E",cex=1.25,pch=16)
 lines(NZsteelunits[["Year"]],NZsteelunits[["ERU"]]/10^6,col="#66A61E",cex=1.25,lwd=1)
 legend(2010, 5.25, cex=1, bty = "n", c("Actual Emissions","Emission units allocated","Emissions x 'two for one' equals ETS liability","Emission Reduction Units add to surplus units","Allocation less ETS liability = annual surplus of units","surplus + ERUs =  stockpile of ~ 5 million units 2021?"), col=c("#1B9E77","#D95F02","#7570B3","#66A61E","#E7298A","#A6761D") , text.col = 1, lty = 1, pch = c(16,17,15,16,18,19))
-mtext(side=3,cex=1.5,line=-3.5, expression(paste("NZ Steel Limited cumulative stockpile of \nemissions units 2010 2021")) ) 
-mtext(side=1,line=-1.25,cex=1,"Data: NZ Greenhouse Gas Inventory 2021, EPA Industrial Allocations 2021")
+mtext(side=3,cex=1.5,line=-3.5, expression(paste("NZ Steel Limited cumulative stockpile of \nemissions units 2010 2023")) ) 
+mtext(side=1,line=-1.25,cex=1,"Data: NZ Greenhouse Gas Inventory 2022, EPA Industrial Allocations 2024")
 mtext(side=2,cex=1, line=-1.2,expression(paste("million tonnes C", O[2], "-e")))
 mtext(side=4,cex=0.75, line=0.05,R.version.string)
 box()
 dev.off()
 
 # chart with darkgray for all variables except the cumulative stock pile of emission units
-#svg(filename="NZsteel-Allocation-GHGs-line-2010-2020-720by540v7.svg", width = 8, height = 6, pointsize = 12, onefile = FALSE, family = "sans", bg = "white", antialias = c("default", "none", "gray", "subpixel"))  
-png("NZsteel-Allocation-GHGs-line-2010-2020-560by420-v7.png", bg="white", width=560, height=420,pointsize = 12)
+svg(filename="NZsteel-Allocation-GHGs-line-2010-2020-720by540v7.svg", width = 8, height = 6, pointsize = 12, onefile = FALSE, family = "sans", bg = "white", antialias = c("default", "none", "gray", "subpixel"))  
+#png("NZsteel-Allocation-GHGs-line-2010-2020-560by420-v7.png", bg="white", width=560, height=420,pointsize = 12)
 par(mar=c(2.7,2.7,1,1)+0.1)
 plot(NZsteelunits[["Year"]],NZsteelunits[["Stockpile"]]/10^6,ylim=c(0,5.8),tck=0.01,axes=FALSE,ann=FALSE,col="#A6761D",type="l",las=1)
-axis(side=1, tck=0.01, las=0, lwd = 1, at = c(2010:2021), labels = c(2010:2021), tick = TRUE)
+axis(side=1, tck=0.01, las=0, lwd = 1, at = c(2010:2023), labels = c(2010:2023), tick = TRUE)
 axis(side=2, tck=0.01, las=2, line = NA,lwd = 1, tick = TRUE)
 points(NZsteelunits[["Year"]],NZsteelunits[["Stockpile"]]/10^6,col="#A6761D",cex=1,pch=19)
 lines(NZsteelunits[["Year"]],NZsteelunits[["Emissions"]]/10^6,col="darkgray",lwd=1)
@@ -598,9 +598,9 @@ lines(NZsteelunits[["Year"]],NZsteelunits[["Overallocation"]]/10^6,col="darkgray
 points(NZsteelunits[["Year"]],NZsteelunits[["Overallocation"]]/10^6,col="darkgray",cex=1.1,pch=18 ) 
 points(NZsteelunits[["Year"]],NZsteelunits[["ERU"]]/10^6,col="darkgray",cex=1.25,pch=16)
 lines(NZsteelunits[["Year"]],NZsteelunits[["ERU"]]/10^6,col="darkgray",cex=1.25,lwd=2)
-legend(2010, 5.25, cex=1, bty = "n", c("Actual emissions","Emission units allocated","Emissions x 'two for one' equals ETS Liability","Emission Reduction Units","Allocation less ETS liability = annual surplus of units","surplus + ERUs =  stockpile of ~ 5 million units 2021?"), col=c("darkgray","darkgray","darkgray","darkgray","darkgray","#A6761D") , text.col = 1, lty = 1, pch = c(16,17,15,16,18,19))
+legend(2010, 5.25, cex=1, bty = "n", c("Actual emissions","Emission units allocated","Emissions x 'two for one' equals ETS Liability","Emission Reduction Units","Allocation less ETS liability = annual surplus of units","surplus + ERUs =  stockpile of + 5 million units 2021?"), col=c("darkgray","darkgray","darkgray","darkgray","darkgray","#A6761D") , text.col = 1, lty = 1, pch = c(16,17,15,16,18,19))
 mtext(side=3,cex=1.5,line=-3.5, expression(paste("NZ Steel Limited cumulative stockpile of \nemissions units 2010 2021")) )
-mtext(side=1,line=-1.25,cex=1, "Data: NZ Greenhouse Gas Inventory 2021 EPA Industrial Allocations 2021")
+mtext(side=1,line=-1.25,cex=1, "Data: NZ Greenhouse Gas Inventory 2022, EPA Industrial Allocations 2023")
 mtext(side=2,cex=1, line=-1.2,expression(paste("million tonnes C", O[2], "-e")))
 mtext(side=4,cex=0.75, line=0.05,R.version.string)
 box()
@@ -609,21 +609,24 @@ dev.off()
 # chart the actual emissions , the allocation and the emissions footprint of allocation
 "#E6AB02" # mustard/Corn
 #A6761D Mandalay brown
-# what is the total mass of emissions pemitted by free emission units?  24,981,914
+# what is the total mass of emissions pemitted by free emission units?  29 million
 sum(NZsteelunits[["Footprint"]]) 
-[1] 24981914
-# what is the total Inventory steel sector emissions?   [1] 20,378,517
+[1] 28722417
+# [1] 24981914
+# what is the total Inventory steel sector emissions?       23 m
 sum(NZsteelunits[["Emissions"]])
-[1] 20378517 
-# what are the total steel sector allocation of emissions?        [1] 16,215,689
+[1] 23279154
+# [1] 20378517 
+# what are the total steel sector allocation of emissions?      20 m
 sum(NZsteelunits[["Allocation"]])
-[1] 16215689
+1] 19956192
+# [1] 16215689
 # chart
-#svg(filename="NZsteel-Allocation-GHGs-line-2010-2020-720by540v8.svg", width = 8, height = 6, pointsize = 12, onefile = FALSE, family = "sans", bg = "white", antialias = c("default", "none", "gray", "subpixel"))  
-png("NZsteel-Allocation-GHGs-line-2010-2020-560by420-v8.png", bg="white", width=560, height=420,pointsize = 12)
+svg(filename="NZsteel-Allocation-GHGs-line-2010-2020-720by540v8.svg", width = 8, height = 6, pointsize = 12, onefile = FALSE, family = "sans", bg = "white", antialias = c("default", "none", "gray", "subpixel"))  
+#png("NZsteel-Allocation-GHGs-line-2010-2020-560by420-v8.png", bg="white", width=560, height=420,pointsize = 12)
 par(mar=c(2.7,2.7,1,1)+0.1)
 plot(NZsteelunits[["Year"]],NZsteelunits[["Allocation"]]/10^6,ylim=c(0,2.9), tck=0.01,axes=FALSE,ann=FALSE,col="#A6761D",type="l",las=1)
-axis(side=1, tck=0.01, las=0, lwd = 1, at = c(2010:2021), labels = c(2010:2021), tick = TRUE)
+axis(side=1, tck=0.01, las=0, lwd = 1, at = c(2010:2023), labels = c(2010:2023), tick = TRUE)
 axis(side=2, tck=0.01, las=2, line = NA,lwd = 1, tick = TRUE)
 lines(NZsteelunits[["Year"]],NZsteelunits[["Emissions"]]/10^6,col="#1B9E77",lwd=1)
 points(NZsteelunits[["Year"]],NZsteelunits[["Emissions"]]/10^6,col="#1B9E77",cex=1,pch=16)
@@ -632,9 +635,9 @@ points(NZsteelunits[["Year"]],NZsteelunits[["Allocation"]]/10^6,col="#D95F02",ce
 lines(NZsteelunits[["Year"]],NZsteelunits[["Footprint"]]/10^6,col="#E6AB02", lwd=1)
 points(NZsteelunits[["Year"]],NZsteelunits[["Footprint"]]/10^6,col="#E6AB02",cex=0.9,pch=15 )
 legend(2013, 0.8, cex=1, bty = "n", c("Emissions footprint of allocation","Actual emissions","Emission units allocated"), col=c("#E6AB02","#1B9E77","#D95F02") , text.col = 1, lty = 1, pch = c(15,16,17))
-mtext(side=3,cex=1.5,line=-3.5, expression(paste("New Zealand Steel Limited emissions footprint of \nfree allocation of emissions units 2010 to 2021")) ) 
-mtext(side=3,cex=1.1,line=-6, expression(paste("The 16m free units allowed an emissions footprint \nof 25m tonnes when steel emissions were 20m tonnes")) ) 
-mtext(side=1,line=-1.25,cex=1,"Data: NZ Greenhouse Gas Inventory 2021, EPA Industrial Allocations 2021")
+mtext(side=3,cex=1.5,line=-3.5, expression(paste("New Zealand Steel Limited emissions footprint of \nfree allocation of emissions units 2010 to 2023")) ) 
+mtext(side=3,cex=1.1,line=-6, expression(paste("The 20m free units allowed an emissions footprint \nof 29m tonnes when steel emissions were 23m tonnes")) ) 
+mtext(side=1,line=-1.25,cex=1,"Data: NZ Greenhouse Gas Inventory 2022, EPA Industrial Allocations 2023")
 mtext(side=2,cex=1, line=-1.2,expression(paste("million tonnes C", O[2], "-e")))
 mtext(side=4,cex=0.75, line=0.05,R.version.string)
 box()
