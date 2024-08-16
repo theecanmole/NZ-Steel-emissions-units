@@ -12,13 +12,7 @@ Here is a graph of the greenhouse gas emissions of the New Zealand steel sector 
 
 I know these emissions are from the New Zealand Steel Limited's steel smelting plant in Glenbrook as I looked up New Zealand Steel's actual 2020 emissions in the EPA report ["ETS Participant Emissions"](https://www.epa.govt.nz/industry-areas/emissions-trading-scheme/ets-reports/emissions-returns/) October 2021. New Zealand Steel's reported emissions are (steel 54,431 + stationary energy 762,038 + coal purchase 736,875 equals) 1,553,344 tonnes.
 
-I have marked that data point with a purple point. The [2020 Greenhouse Gas Inventory](https://environment.govt.nz/publications/new-zealands-greenhouse-gas-inventory-1990-2020/) steel emissions are 1,578,554; the green point. The purple and green data points overlap on the graph. So I think it's reasonable to use the GHG Inventory steel industry emissions as an estimate of New Zealand Steel's actual emissions from 1990 to 2020.
-
-In October 2022, the Environmental Protection Authority published ["ETS Participant Emissions"](https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Reports/Emissions-returns/Participant-Emissions-Report.pdf) for the calendar year 2021.
- 
-In that report, as in 2020, New Zealand Steel's emissions are split between three categories; 1) "Importing coal" 989,459 tonnes page 17, 2) "Producing iron or steel" 43,466 tonnes page 21, 3) "Stationary energy purchasing coal" 856,363 tonnes page 33.
-
-So 43466 + 989459 + 856363 = 1889288 tonnes or 1,889,288 tonnes of emissions from the steel smelter for 2021. I have again marked the point with a purple point.
+I have marked that data point with a red bullet point. 
 
 Here is the same graph but with the [industrial allocation](https://web.archive.org/web/20121211052612/http://www.climatechange.govt.nz/emissions-trading-scheme/participating/industry/allocation/how-it-works/) of free emissions units added.
 
