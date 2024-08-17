@@ -15,7 +15,8 @@ https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Report
 # navigate to folder /NZsteel, select file NZ-Steel-code.r and right click and open with RKward
 # what version of R is this?
 R.version.string
-[1] "R version 4.2.0 (2022-04-22)"
+[1] "R version 4.3.2 (2023-10-31)"
+# [1] "R version 4.2.0 (2022-04-22)"
 # load packages 
 library(readxl)
 library(dplyr)
@@ -32,8 +33,7 @@ download.file("https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Tradin
 Warning messages:
 1: In download.file("https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Reports/Industrial-Allocations/Industrial-Allocations-Final-Decisions-Report-Aug-2024.xlsx",  :
   URL https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Reports/Industrial-Allocations/Industrial-Allocations-Final-Decisions-Report-Aug-2024.xlsx: cannot open destfile 'Industrial-Allocations/Industrial-Allocations-Final-Decisions-Report-Aug-2024.xlsx', reason 'No such file or directory'
-2: In download.file("https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Reports/Industrial-Allocations/Industrial-Allocations-Final-Decisions-Report-Aug-2024.xlsx",  :
-  download had nonzero exit status
+
 # I downloaded manually   
 #download.file("https://www.epa.govt.nz/assets/Uploads/Documents/Emissions-Trading-Scheme/Reports/Industrial-Allocations/Industrial-Allocations-Final-Decisions_2022.xlsx","Industrial-Allocations-Final-Decisions_2022.xlsx")
 
@@ -184,14 +184,13 @@ NZsteelunits <- read.csv("NZsteelunits.csv")
 
 ------------------------------------------------------------------------------
 The AR4 emissions data
-download.file("https://environment.govt.nz/assets/publications/GhG-Inventory/GHG-inventory-2024/Time-series-emissions-data-in-AR4-1990-to-2022-from-NZGHGI-2024.xlsx, "TimeseriesemissionsdatainAR41990to2022fromNZGHGI2024.xlsx")
+download.file("https://environment.govt.nz/assets/publications/GhG-Inventory/GHG-inventory-2024/Time-series-emissions-data-in-AR4-1990-to-2022-from-NZGHGI-2024.xlsx", "TimeseriesemissionsdatainAR41990to2022fromNZGHGI2024.xlsx")
 url <- "https://environment.govt.nz/assets/publications/GhG-Inventory/GHG-inventory-2024/Time-series-emissions-data-in-AR4-1990-to-2022-from-NZGHGI-2024.xlsx" 
 
 # 21 May 2023 Sunday download latest detailed emissions data by category from Ministry for the Environment
 # https://environment.govt.nz/publications/new-zealands-greenhouse-gas-inventory-1990-2021/
 
 #download.file("https://environment.govt.nz/assets/publications/climate-change/Time-series-emissions-data-by-category-presented-in-AR4-Excel-xlsx.xlsx","Time-series-emissions-data-by-category-2021.xlsx")
-trying URL 'https://environment.govt.nz/assets/publications/climate-change/Time-series-emissions-data-by-category-presented-in-AR4-Excel-xlsx.xlsx'
 trying URL 'https://environment.govt.nz/assets/publications/climate-change/Time-series-emissions-data-by-category-presented-in-AR4-Excel-xlsx.xlsx'
 Content type 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' length 1497400 bytes (1.4 MB)
 ==================================================
@@ -234,15 +233,9 @@ steel
 [10] 1661611 1578554 1718126
 length(steel)
 [1] 13
-# add a 'NA' for 2023 steel emissions as the 2023 GHGI not due until April 2025
-steel <- append(steel,NA) 
-str(steel)
- num [1:14] 1696438 1685892 1664743 1708143 1732380 ... 
-tail(steel)
-[1] 1694406 1661611 1578554 1718126 1541555      NA 
 # https://www.rnz.co.nz/news/business/525278/nz-steel-reports-making-1-point-3m-tonnes-of-carbon-emissions-claims-1-point-8m-tonnes-of-free-carbon-credits
 # Eloise Gibson says NZ STeel emissions to EPA are 1.8 million tonnes
-# EPS spreadsheet says NZ Steel 2023 importing coal 417070 purchasing coal 904186 producing steel 37826
+# EPS spreadsheet says NZ Steel 2023 importing coal 417070 purchasing coal 904186 producing steel 37826 ok
 417070 + 904186 + 37826
 [1] 1359082
 # add EPA 2023 steel emissions 
@@ -268,11 +261,12 @@ tibble [14 × 5] (S3: tbl_df/tbl/data.frame)
  $ Emissions   : num [1:14] 1696438 1685892 1664743 1708143 1732380 ...
 
 tail(NZsteelunits,2)
-# A tibble: 2 × 9
-   Year Allocation MeanMayprice      Value Emissions twoforone ETSliability
-  <dbl>      <dbl>        <dbl>      <dbl>     <dbl>     <dbl>        <dbl>
-1  2022    1910503         76.6 146249005.  1541555.         1     1541555.
-2  2023    1830000         53.8  98472300        NA          1          NA 
+   Year Allocation MeanMayprice     Value Emissions twoforone ETSliability
+13 2022    1910503        76.55 146249005   1541555         1      1541555
+14 2023    1830000        53.81  98472300   1359082         1      1359082
+   Footprint Overallocation ERU Stockpile
+13   1910503         368948  NA   5539051
+14   1830000         470918  NA   6009969
 
 # OUTDATED Are the Inventory steel emissions a good proxy for NZ Steels emissions? Check EPA 2021 "ETS Participant Emissions" report,
 #Table 1: Reported ETS emissions and removals by activity, 2020/21 reporting year, Industrial processes Producing iron or steel 54431 (page 12)
@@ -309,19 +303,19 @@ num [1:14] 0.25 0.5 0.5 0.5 0.5 0.5 0.5 0.67 0.83 1
 NZsteelunits[["twoforone"]] <- unitdiscount
 
 # add variable that is the ETS unit surrender liability - 'Emissions' x 'twoforone' 
-NZsteelunits[["ETSliability"]] <- NZsteelunits[["Emissions"]]*NZsteelunits[["twoforone"]]
+NZsteelunits[["ETSliability"]] <- round(NZsteelunits[["Emissions"]]*NZsteelunits[["twoforone"]],0)
 
 # add variable that is the emissions footprint of unit allocation 'Allocation' / 2 for 1 unit discount
-NZsteelunits[["Footprint"]] <- NZsteelunits[["Allocation"]] / NZsteelunits[["twoforone"]]
+NZsteelunits[["Footprint"]] <- round(NZsteelunits[["Allocation"]] / NZsteelunits[["twoforone"]],0)
 
 # add variable that is the annual surplus, the annual sum of allocated units less the estimate of units surrendered (ETS liability)
 NZsteelunits[["Overallocation"]] <- NZsteelunits[["Allocation"]] - NZsteelunits[["ETSliability"]] 
 # What is the sum of the annual over allocations?
 sum(NZsteelunits[["Overallocation"]])
-[1] 3953195 # 3113329 #  3,113,329
+[1] 3953194 # 3113329 #  3,113,329
 # what is the cumulative over allocation by the end of 2023?
 sum(NZsteelunits[["Overallocation"]]/10^6)
-[1] 3.953195 # 3.113329 # almost 4 million units
+[1] 3.953194 # 3.113329 # almost 4 million units
 
 # add internationally sourced emission reduction units (ERUs) held by NZ Steel Limited from the Emissions Unit Register https://www.emissionsregister.govt.nz/Common/ViewPublicReport.aspx?rt=fa64ead4-70b7-4d41-9633-616965b4e2fb
 2013 1022527
@@ -360,15 +354,15 @@ NZsteelunits[["Stockpile"]][14] <- NZsteelunits[["Stockpile"]][13]+NZsteelunits[
 
 # How big is the estimated stockpile after the 2023 calendar year
 NZsteelunits[["Stockpile"]][14]
-[1] 6009970
+[1] 6009969
 # [1] 5170104 # at 21 May 2023
 # [1] 4998943 
 # or 5,170,104 units or 5.2 million units at end of calendar year 2021
 
 # What is most recent NZU price? and what is market value of NZ Steel stockpile ?
 https://www.carbonnews.co.nz/story.asp?storyID=32304 53.17 16 August 2024
-NZsteelunits[["Stockpile"]][14] * 53.17
-[1] 319550121 
+round(NZsteelunits[["Stockpile"]][14] * 53.17,2)
+[1] 319550052 
 # or $320 million
 
 #Jan 24, 2023, 18:30:39	https://www.carbonnews.co.nz/story.asp?storyID=26805
@@ -397,6 +391,21 @@ tibble [14 × 11] (S3: tbl_df/tbl/data.frame)
  $ Overallocation: num [1:14] 70594 146358 171358 175280 207299 ...
  $ ERU           : num [1:14] NA NA NA 1022527 1001714 ...
  $ Stockpile     : num [1:14] 70594 216953 388311 1586118 2795131 ...
+head(NZsteelunits)
+  Year Allocation MeanMayprice    Value Emissions twoforone ETSliability
+1 2010     494704        17.58  8696896   1696438      0.25     424109.6
+2 2011     989304        19.84 19627791   1685892      0.50     842945.9
+3 2012    1003730         6.23  6253238   1664743      0.50     832371.7
+4 2013    1029352         1.94  1996943   1708143      0.50     854071.6
+5 2014    1073489         4.08  4379835   1732380      0.50     866190.0
+6 2015    1067501         5.34  5700455   1767870      0.50     883935.0
+  Footprint Overallocation     ERU  Stockpile
+1   1978816       70594.43      NA   70594.43
+2   1978608      146358.14      NA  216952.58
+3   2007460      171358.33      NA  388310.91
+4   2058704      175280.37 1022527 1586118.28
+5   2146978      207298.96 1001714 2795131.25
+6   2135002      183566.02   32534 3011231.27
 
 # select some colours for charting 
 display.brewer.all(n=NULL, type="qual", select=NULL, exact.n=TRUE, colorblindFriendly=TRUE)
@@ -431,15 +440,14 @@ axis(side=2, tck=0.01, las=2, line = NA,lwd = 1 ,tick = TRUE)
 lines(NZsteelunits[["Year"]],NZsteelunits[["Emissions"]]/10^6,col="#1B9E77",lwd=1)
 points(NZsteelunits[["Year"]],NZsteelunits[["Emissions"]]/10^6,cex=1,pch=16, col="#1B9E77")
 legend(2011, 1.2, bty = "n",cex=1.1, "Steel emissions MfE Greenhouse Gas Inventory 2023",col = "#1B9E77", text.col = 1,lty = 1, pch=16 ) 
-legend(2011, 1.0, bty = "n",cex=1.1, "NZ Steel emissions EPA Participant Reports 2020", col="red",text.col=1, pch=19)
+legend(2011, 1.0, bty = "n",cex=1.1, "NZ Steel emissions EPA Participant Reports 2020 2023", col="red",text.col=1, pch=19)
 mtext(side=3,cex=1.5, line=-3.5, expression(paste("New Zealand Steel Limited greenhouse gas emissions \n2010 to 2023")) ) 
 mtext(side=1,line=-1.25,cex=1,"Data: New Zealand’s Greenhouse Gas Inventory 1990 – 2021\nETS Participant Emissions EPA 2020 2021 2024")
 mtext(side=2,cex=1, line=-1.2,expression(paste("million tonnes C", O[2], "-e")))
 mtext(side=4,cex=0.75, line=0.05,R.version.string)
 box()
 points(2020,1553344/10^6,cex=1.5,pch=19, col="red")
-#points(2021,1889288/10^6,cex=1,pch=19, col="red")
-#lines(c(2020,2021),c(1553344/10^6,1889288/10^6),lwd=1,col="#E7298A")
+points(2023,1359082/10^6,cex=1.5,pch=19, col="red")
 dev.off() 
 
 # add units allocated to chart of actual emissions
